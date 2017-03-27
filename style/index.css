@@ -154,7 +154,7 @@
   top: 50%;
   right: 0;
   content: "";
-  margin-top: -10px;
+  margin-top: -20px;
   border-width: 20px;
   border-style: solid;
   border-color: transparent #fff transparent transparent;
@@ -209,6 +209,7 @@
   width: 1200px;
   margin: 0 auto;
   background: #fff;
+  padding-bottom: 26px;
 }
 .compensate .swapper {
   height: 152px;
@@ -254,20 +255,19 @@
 .case {
   background-image: url(../imgs/index_05.jpg);
   height: 540px;
-  position: relative;
 }
 .case .mask {
   width: 100%;
   height: 100%;
-  position: absolute;
   background: rgba(0, 0, 0, 0.7);
+  overflow: hidden;
 }
 .case .title {
   font-size: 38px;
   font-weight: 500;
   text-align: center;
   line-height: 1;
-  margin-top: 41px;
+  margin: 41px 0 55px;
 }
 .case .title a {
   color: #fff;
@@ -277,7 +277,36 @@
   margin: 0 auto;
 }
 .case .item {
+  position: relative;
   float: left;
-  width: 33.33%;
+  width: 350px;
   background: #fff;
+  margin: 0 25px;
+  overflow: hidden;
+}
+.case .item:hover .mask {
+  transform: translateX(0);
+}
+.case .item .name {
+  font-size: 16px;
+  color: #000000;
+  padding: 0  11px;
+  line-height: 39px;
+}
+.case .item .desc {
+  color: #888888;
+  font-size: 12px;
+  padding: 0  11px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.case .item .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 216px;
+  background: rgba(32, 74, 158, 0.7);
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in-out;
 }

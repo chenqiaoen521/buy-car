@@ -44,7 +44,7 @@
 	.image{float:left;position:relative;
 	&:after{
 			position:absolute;top: 50%;right:0;content:"";
-			margin-top:-10px;
+			margin-top:-20px;
 			border-width: 20px;
 		    border-style: solid;
 		    border-color: transparent #fff transparent transparent;
@@ -70,13 +70,19 @@
  		.name{color:#204a9e; font-size:16px; font-weight:bold;margin:28px 0 12px;line-height:1;}
  		.desc{color:#777777; font-size:12px;line-height:20px;}
 	}
+	padding-bottom: 26px;
 }
 .case{
 	background-image: url(../imgs/index_05.jpg);
 	height:540px;
-	position:relative;
-	.mask{width:100%;height:100%;position:absolute;background:rgba(0,0,0,.7)}
-	.title{font-size:38px;  a{color:#fff;} font-weight:500;text-align:center;line-height:1; margin-top:41px;}
+	.mask{width:100%;height:100%;background:rgba(0,0,0,.7) ;overflow:hidden;}
+	.title{font-size:38px;  a{color:#fff;} font-weight:500;text-align:center;line-height:1; margin:41px 0 55px;}
 	.lists{width:1200px;margin:0 auto;}
-	.item{float:left; width:33.33%;background:#fff;}
+	.item{position:relative;  float:left; width:350px;background:#fff;margin:0 25px;overflow:hidden;
+		&:hover .mask{transform: translateX(0);}
+		.name{font-size:16px; color:#000000;padding:0  11px;line-height:39px;}
+		.desc{color:#888888;font-size:12px;padding:0  11px;line-height:20px;margin-bottom:8px;}
+		.mask{position:absolute;top: 0;left:0;right:0;height:216px;background:rgba(32,74,158,.7);
+			  transform: translateX(-100%); transition: all .5s ease-in-out;}
+	}
 }

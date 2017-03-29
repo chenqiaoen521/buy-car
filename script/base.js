@@ -1,7 +1,11 @@
 $(function(){
+	$('.hook-top').click(function(e){
+		 $('html body').animate({scrollTop: '0px'}, 800);
+	})
 	$('.hook-cartype').click(function(e){
 		e.preventDefault();
 		e.stopPropagation();
+		$('.hook-city-second,.hook-date-second').hide();
 		$(this).next('.hook-second').fadeToggle();
 	});
 	$('.pinpai_num').click(function(event) {
@@ -45,9 +49,7 @@ $(function(){
 		e.stopPropagation();
 	});
 	$(document).click(function(event) {
-		$('.third-menu').fadeOut();
-		$('.hook-second').fadeOut();
-		$('.four-menu').fadeOut();
+		$('.ucarselecttype').fadeOut();
 	});
 	$('.hook-menu').hover(function(){
 			$(this).find('.second-menu').fadeToggle();
@@ -56,12 +58,14 @@ $(function(){
 	$('.hook-city').click(function(e){
 		e.preventDefault();
 		e.stopPropagation();
+		$('.hook-second,.hook-date-second').hide();
 		$(this).next('.hook-city-second').fadeToggle();
 	})
 
 	$('.hook-date').click(function(e){
 		e.preventDefault();
 		e.stopPropagation();
+		$('.hook-second,.hook-city-second').hide();
 		$(this).next('.hook-date-second').fadeToggle();
 	})
 

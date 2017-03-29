@@ -10,91 +10,368 @@
 	maximum-scale=1.0,
 	minimum-scale=1.0,
 	user-scalable=no">
- 	<link href="./style/base.css" rel="stylesheet">
- 	<link href="./style/index.css" rel="stylesheet">
+ 	<link type="text/css" href="./style/base.css" rel="stylesheet">
+ 	<link type="text/css" href="./style/index.css" rel="stylesheet">
 	<!--脚本文件-->
 	<script src="./script/jquery-1.8.3.min.js" type="text/javascript"></script>
+	<script src="./script/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script> 
 	<script src="./script/base.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="box">
-	<header class="header clearfix">
-		<div class="left">
-			<img src="./imgs/logo.jpg" alt="" class="logo" width="90" height="70">
-			<span class="title">买车无忧</span> <span class="desc">专业评估•安全可靠</span>
+<header class="header clearfix">
+	<div class="left">
+		<img src="./imgs/logo.jpg" alt="" class="logo" width="90" height="70">
+		<span class="title">买车无忧</span> <span class="desc">专业评估•安全可靠</span>
+	</div>
+	<div class="menu">
+		<ul>
+			<li class="menu-item"><a href="index.html" >首页</a></li>
+			<li class="menu-item"><a href="assess.html" class="active">评估</a></li>
+			<li class="menu-item"><a href="case.html">案例</a></li>
+			<li class="menu-item  hook-menu">
+				<a href="strategy.html">二手车攻略</a>
+				<dl class="second-menu">
+				   <dd><a href="strategy.html">攻略</a></dd>
+				    <dd><a href="zixun.html">资讯</a></dd>
+				</dl>
+			</li>
+			<li class="menu-item"><a href="about.html">关于我们</a></li>
+			<li class="menu-item"><a href="download.html">APP下载</a></li>
+		</ul>
+	</div>
+	<div class="select-car" style="left:auto;right:0">
+		<div class="box-title">
+			<span class="car-title">二手车鉴定</span><span class="car-desc">平均高于市场价10%</span>	
 		</div>
-		<div class="menu">
-			<ul>
-				<li class="menu-item"><a href="index.html" >首页</a></li>
-				<li class="menu-item"><a href="assess.html">评估</a></li>
-				<li class="menu-item"><a href="case.html">案例</a></li>
-				<li class="menu-item  hook-menu">
-					<a href="strategy.html">二手车攻略</a>
-					<dl class="second-menu">
-					   <dd><a href="strategy.html">攻略</a></dd>
-					   <dd><a href="consult.html">咨询</a></dd>
-					</dl>
-				</li>
-				<li class="menu-item"><a href="about.html">关于我们</a></li>
-				<li class="menu-item"><a href="download.html" class="active">APP下载</a></li>
-			</ul>
-		</div>
-	</header>
+		<ul>
+			<li>
+				<div class="select_box">
+					<div class="tip" type="text">
+						<input type="text" placeholder="请输入16位vin码">
+					</div>
+				</div>
+			</li>
+			<li class="mb">
+				<div class="select_box hook-cartype">
+					<div class="tip">请选择车型</div>
+				</div>
+				<div class="ucarselecttype hook-second" style="display: none;">
+					<div class="se-title">
+						请选择品牌
+					</div>
+					<div class="left-letters">
+						<a href="javascript:void(0)" id="letters_1" class="pinpai_num" rel="26">A</a>
+						<a href="javascript:void(0)" id="letters_2" class="pinpai_num" rel="26">B</a>
+						<a href="javascript:void(0)" id="letters_3" class="pinpai_num" rel="26">C</a>
+						<a href="javascript:void(0)" id="letters_4" class="pinpai_num" rel="26">D</a>
+						<a href="javascript:void(0)" id="letters_5" class="pinpai_num" rel="26">E</a>
+						<a href="javascript:void(0)" id="letters_6" class="pinpai_num" rel="26">F</a>
+						<a href="javascript:void(0)" id="letters_7" class="pinpai_num" rel="26">G</a>
+						<a href="javascript:void(0)" id="letters_8" class="pinpai_num" rel="26">H</a>
+						<a href="javascript:void(0)" id="letters_9" class="pinpai_num" rel="26">I</a>
+						<a href="javascript:void(0)" id="letters_10" class="pinpai_num" rel="26">J</a>
+						<a href="javascript:void(0)" id="letters_11" class="pinpai_num" rel="26">K</a>
+						<a href="javascript:void(0)" id="letters_12" class="pinpai_num" rel="26">L</a>
+						<a href="javascript:void(0)" id="letters_13" class="pinpai_num" rel="26">M</a>
+						<a href="javascript:void(0)" id="letters_14" class="pinpai_num" rel="26">N</a>
+						<a href="javascript:void(0)" id="letters_15" class="pinpai_num" rel="26">O</a>
+						<a href="javascript:void(0)" id="letters_16" class="pinpai_num" rel="26">P</a>
+						<a href="javascript:void(0)" id="letters_17" class="pinpai_num" rel="26">Q</a>
+						<a href="javascript:void(0)" id="letters_18" class="pinpai_num" rel="26">R</a>
+						<a href="javascript:void(0)" id="letters_19" class="pinpai_num" rel="26">S</a>
+						<a href="javascript:void(0)" id="letters_20" class="pinpai_num" rel="26">T</a>
+						<a href="javascript:void(0)" id="letters_21" class="pinpai_num" rel="26">U</a>
+						<a href="javascript:void(0)" id="letters_22" class="pinpai_num" rel="26">V</a>
+						<a href="javascript:void(0)" id="letters_23" class="pinpai_num" rel="26">W</a>
+						<a href="javascript:void(0)" id="letters_24" class="pinpai_num" rel="26">X</a>
+						<a href="javascript:void(0)" id="letters_25" class="pinpai_num" rel="26">Y</a>
+						<a href="javascript:void(0)" id="letters_26" class="pinpai_num" rel="26">Z</a>
+					</div>
+					<div class="right-letters">
+                                        <p id="A" class="pinpailist" style="background:#e3e3e3;text-align:center">A</p><p class="pinpailist list_1" id="1" rel="A">奥迪</p><p class="pinpailist list_1" id="3" rel="A">阿尔法·罗密欧</p><p class="pinpailist list_1" id="2" rel="A">阿斯顿·马丁</p><p id="B" class="pinpailist" style="background:#e3e3e3;text-align:center">B</p><p class="pinpailist list_1" id="20" rel="B">保斐利</p><p class="pinpailist list_1" id="11" rel="B">保时捷</p><p class="pinpailist list_1" id="6" rel="B">别克</p><p class="pinpailist list_1" id="13" rel="B">北京汽车</p><p class="pinpailist list_1" id="14" rel="B">北汽制造</p><p class="pinpailist list_1" id="17" rel="B">北汽威旺</p><p class="pinpailist list_1" id="156" rel="B">北汽幻速</p><p class="pinpailist list_1" id="115" rel="B">北汽绅宝</p><p class="pinpailist list_1" id="12" rel="B">奔腾</p><p class="pinpailist list_1" id="9" rel="B">奔驰</p><p class="pinpailist list_1" id="7" rel="B">宝马</p><p class="pinpailist list_1" id="15" rel="B">宝骏</p><p class="pinpailist list_1" id="144" rel="B">宝龙</p><p class="pinpailist list_1" id="16" rel="B">宾利</p><p class="pinpailist list_1" id="18" rel="B">布加迪</p><p class="pinpailist list_1" id="5" rel="B">本田</p><p class="pinpailist list_1" id="10" rel="B">标致</p><p class="pinpailist list_1" id="8" rel="B">比亚迪</p><p class="pinpailist list_1" id="167" rel="B">北汽新能源</p><p class="pinpailist list_1" id="172" rel="B">宝沃</p><p class="pinpailist list_1" id="499" rel="B">比速</p><p id="C" class="pinpailist" style="background:#e3e3e3;text-align:center">C</p><p class="pinpailist list_1" id="24" rel="C">昌河</p><p class="pinpailist list_1" id="22" rel="C">长城</p><p class="pinpailist list_1" id="23" rel="C">长安商用</p><p class="pinpailist list_1" id="21" rel="C">长安轿车</p><p class="pinpailist list_1" id="497" rel="C">成功</p><p id="D" class="pinpailist" style="background:#e3e3e3;text-align:center">D</p><p class="pinpailist list_1" id="31" rel="D">DS</p><p class="pinpailist list_1" id="27" rel="D">东南</p><p class="pinpailist list_1" id="33" rel="D">东风</p><p class="pinpailist list_1" id="28" rel="D">东风小康</p><p class="pinpailist list_1" id="32" rel="D">东风风度</p><p class="pinpailist list_1" id="30" rel="D">东风风神</p><p class="pinpailist list_1" id="26" rel="D">东风风行</p><p class="pinpailist list_1" id="170" rel="D">东风风光</p><p class="pinpailist list_1" id="25" rel="D">大众</p><p class="pinpailist list_1" id="142" rel="D">大迪</p><p class="pinpailist list_1" id="34" rel="D">大通</p><p class="pinpailist list_1" id="29" rel="D">道奇</p><p id="F" class="pinpailist" style="background:#e3e3e3;text-align:center">F</p><p class="pinpailist list_1" id="36" rel="F">丰田</p><p class="pinpailist list_1" id="38" rel="F">法拉利</p><p class="pinpailist list_1" id="35" rel="F">福特</p><p class="pinpailist list_1" id="39" rel="F">福田</p><p class="pinpailist list_1" id="40" rel="F">福迪</p><p class="pinpailist list_1" id="37" rel="F">菲亚特</p><p class="pinpailist list_1" id="41" rel="F">飞驰商务车</p><p class="pinpailist list_1" id="162" rel="F">福汽启腾</p><p id="G" class="pinpailist" style="background:#e3e3e3;text-align:center">G</p><p class="pinpailist list_1" id="47" rel="G">GMC</p><p class="pinpailist list_1" id="48" rel="G">光冈</p><p class="pinpailist list_1" id="44" rel="G">广汽传祺</p><p class="pinpailist list_1" id="45" rel="G">广汽吉奥</p><p class="pinpailist list_1" id="46" rel="G">观致</p><p id="H" class="pinpailist" style="background:#e3e3e3;text-align:center">H</p><p class="pinpailist list_1" id="146" rel="H">华普</p><p class="pinpailist list_1" id="52" rel="H">华泰</p><p class="pinpailist list_1" id="147" rel="H">华翔富奇</p><p class="pinpailist list_1" id="160" rel="H">华颂</p><p class="pinpailist list_1" id="50" rel="H">哈弗</p><p class="pinpailist list_1" id="56" rel="H">哈飞</p><p class="pinpailist list_1" id="58" rel="H">恒天</p><p class="pinpailist list_1" id="145" rel="H">悍马</p><p class="pinpailist list_1" id="59" rel="H">汇众</p><p class="pinpailist list_1" id="57" rel="H">海格</p><p class="pinpailist list_1" id="51" rel="H">海马</p><p class="pinpailist list_1" id="54" rel="H">海马商用车</p><p class="pinpailist list_1" id="53" rel="H">红旗</p><p class="pinpailist list_1" id="55" rel="H">黄海</p><p class="pinpailist list_1" id="173" rel="H">华泰新能源</p><p class="pinpailist list_1" id="495" rel="H">汉腾</p><p id="J" class="pinpailist" style="background:#e3e3e3;text-align:center">J</p><p class="pinpailist list_1" id="61" rel="J">Jeep</p><p class="pinpailist list_1" id="70" rel="J">九龙</p><p class="pinpailist list_1" id="143" rel="J">吉利</p><p class="pinpailist list_1" id="62" rel="J">吉利全球鹰</p><p class="pinpailist list_1" id="63" rel="J">吉利帝豪</p><p class="pinpailist list_1" id="65" rel="J">吉利英伦</p><p class="pinpailist list_1" id="64" rel="J">捷豹</p><p class="pinpailist list_1" id="68" rel="J">江南</p><p class="pinpailist list_1" id="60" rel="J">江淮</p><p class="pinpailist list_1" id="66" rel="J">江铃</p><p class="pinpailist list_1" id="71" rel="J">金旅客车</p><p class="pinpailist list_1" id="67" rel="J">金杯</p><p class="pinpailist list_1" id="69" rel="J">金龙联合</p><p id="K" class="pinpailist" style="background:#e3e3e3;text-align:center">K</p><p class="pinpailist list_1" id="74" rel="K">克莱斯勒</p><p class="pinpailist list_1" id="157" rel="K">凯翼</p><p class="pinpailist list_1" id="73" rel="K">凯迪拉克</p><p class="pinpailist list_1" id="158" rel="K">卡威</p><p class="pinpailist list_1" id="77" rel="K">卡尔森</p><p class="pinpailist list_1" id="75" rel="K">开瑞</p><p class="pinpailist list_1" id="76" rel="K">科尼塞克</p><p id="L" class="pinpailist" style="background:#e3e3e3;text-align:center">L</p><p class="pinpailist list_1" id="82" rel="L">兰博基尼</p><p class="pinpailist list_1" id="81" rel="L">力帆</p><p class="pinpailist list_1" id="86" rel="L">劳斯莱斯</p><p class="pinpailist list_1" id="87" rel="L">林肯</p><p class="pinpailist list_1" id="85" rel="L">猎豹</p><p class="pinpailist list_1" id="89" rel="L">理念</p><p class="pinpailist list_1" id="88" rel="L">莲花</p><p class="pinpailist list_1" id="90" rel="L">路特斯</p><p class="pinpailist list_1" id="79" rel="L">路虎</p><p class="pinpailist list_1" id="78" rel="L">铃木</p><p class="pinpailist list_1" id="83" rel="L">陆风</p><p class="pinpailist list_1" id="80" rel="L">雷克萨斯</p><p class="pinpailist list_1" id="84" rel="L">雷诺</p><p id="M" class="pinpailist" style="background:#e3e3e3;text-align:center">M</p><p class="pinpailist list_1" id="93" rel="M">MG</p><p class="pinpailist list_1" id="94" rel="M">MINI</p><p class="pinpailist list_1" id="98" rel="M">摩根</p><p class="pinpailist list_1" id="96" rel="M">玛莎拉蒂</p><p class="pinpailist list_1" id="99" rel="M">美亚</p><p class="pinpailist list_1" id="97" rel="M">迈凯伦</p><p class="pinpailist list_1" id="95" rel="M">迈巴赫</p><p class="pinpailist list_1" id="92" rel="M">马自达</p><p id="N" class="pinpailist" style="background:#e3e3e3;text-align:center">N</p><p class="pinpailist list_1" id="100" rel="N">纳智捷</p><p id="O" class="pinpailist" style="background:#e3e3e3;text-align:center">O</p><p class="pinpailist list_1" id="102" rel="O">欧宝</p><p class="pinpailist list_1" id="103" rel="O">欧朗</p><p class="pinpailist list_1" id="101" rel="O">讴歌</p><p id="Q" class="pinpailist" style="background:#e3e3e3;text-align:center">Q</p><p class="pinpailist list_1" id="106" rel="Q">启辰</p><p class="pinpailist list_1" id="105" rel="Q">奇瑞</p><p class="pinpailist list_1" id="107" rel="Q">庆铃</p><p class="pinpailist list_1" id="104" rel="Q">起亚</p><p id="R" class="pinpailist" style="background:#e3e3e3;text-align:center">R</p><p class="pinpailist list_1" id="108" rel="R">日产</p><p class="pinpailist list_1" id="110" rel="R">瑞麒</p><p class="pinpailist list_1" id="109" rel="R">荣威</p><p id="S" class="pinpailist" style="background:#e3e3e3;text-align:center">S</p><p class="pinpailist list_1" id="116" rel="S">Smart</p><p class="pinpailist list_1" id="111" rel="S">三菱</p><p class="pinpailist list_1" id="118" rel="S">世爵</p><p class="pinpailist list_1" id="117" rel="S">双环</p><p class="pinpailist list_1" id="114" rel="S">双龙</p><p class="pinpailist list_1" id="113" rel="S">斯巴鲁</p><p class="pinpailist list_1" id="112" rel="S">斯柯达</p><p class="pinpailist list_1" id="149" rel="S">萨博</p><p class="pinpailist list_1" id="169" rel="S">思铭</p><p class="pinpailist list_1" id="498" rel="S">斯威</p><p class="pinpailist list_1" id="500" rel="S">赛麟</p><p class="pinpailist list_1" id="501" rel="S">陕汽通家</p><p id="T" class="pinpailist" style="background:#e3e3e3;text-align:center">T</p><p class="pinpailist list_1" id="120" rel="T">TESLA</p><p class="pinpailist list_1" id="150" rel="T">天马</p><p class="pinpailist list_1" id="166" rel="T">腾势</p><p id="W" class="pinpailist" style="background:#e3e3e3;text-align:center">W</p><p class="pinpailist list_1" id="121" rel="W">五菱</p><p class="pinpailist list_1" id="124" rel="W">威兹曼</p><p class="pinpailist list_1" id="123" rel="W">威麟</p><p class="pinpailist list_1" id="122" rel="W">沃尔沃</p><p class="pinpailist list_1" id="163" rel="W">五十铃</p><p id="X" class="pinpailist" style="background:#e3e3e3;text-align:center">X</p><p class="pinpailist list_1" id="155" rel="X">夏利</p><p class="pinpailist list_1" id="130" rel="X">新凯</p><p class="pinpailist list_1" id="151" rel="X">新大地</p><p class="pinpailist list_1" id="148" rel="X">新雅途</p><p class="pinpailist list_1" id="125" rel="X">现代</p><p class="pinpailist list_1" id="128" rel="X">西雅特</p><p class="pinpailist list_1" id="126" rel="X">雪佛兰</p><p class="pinpailist list_1" id="127" rel="X">雪铁龙</p><p id="Y" class="pinpailist" style="background:#e3e3e3;text-align:center">Y</p><p class="pinpailist list_1" id="131" rel="Y">一汽</p><p class="pinpailist list_1" id="135" rel="Y">依维柯</p><p class="pinpailist list_1" id="136" rel="Y">扬州亚星客车</p><p class="pinpailist list_1" id="134" rel="Y">永源</p><p class="pinpailist list_1" id="159" rel="Y">英致</p><p class="pinpailist list_1" id="132" rel="Y">英菲尼迪</p><p class="pinpailist list_1" id="133" rel="Y">野马</p><p id="Z" class="pinpailist" style="background:#e3e3e3;text-align:center">Z</p><p class="pinpailist list_1" id="139" rel="Z">中兴</p><p class="pinpailist list_1" id="137" rel="Z">中华</p><p class="pinpailist list_1" id="152" rel="Z">中客华北</p><p class="pinpailist list_1" id="140" rel="Z">中欧</p><p class="pinpailist list_1" id="154" rel="Z">中顺</p><p class="pinpailist list_1" id="138" rel="Z">众泰</p><p class="pinpailist list_1" id="168" rel="Z">知豆</p> 
+					</div>
+				</div>
+				<div class="ucarselecttype  third-menu hook-third" style="display:none;" >
+					<div class="se-title">
+						请选择车系
+					</div>
+					<div class="right-letters third-menu-content">
+						<p class="pinpailist" style="background:#e3e3e3;text-align:center">北京汽车</p>
+						<p class="list_2 layerbg2" id="1" rel="A">北京20</p>
+						<p class="list_2 layerbg2" id="1" rel="A">北京20</p>
+						<p class="list_2 layerbg2" id="1" rel="A">北京20</p>
+						<p class="pinpailist" style="background:#e3e3e3;text-align:center">进口北京汽车</p>
+						<p class="list_2 layerbg2" id="1" rel="A">北京40</p>
+						<p class="list_2 layerbg2" id="1" rel="A">北京40</p>
+						<p class="list_2 layerbg2" id="1" rel="A">北京40</p>
+					</div>
+				</div>
+				<div class="ucarselecttype  four-menu hook-four" style="display:none;" >
+					<div class="se-title">
+						请选择车型
+					</div>
+					<div class="right-letters four-menu-content">
+						<p class="pinpailist" style="background:#e3e3e3;text-align:center">2016款</p>
+						<p class="list_3 layerbg2" id="1" rel="A">2016款 北京40L 2.0T 手动两驱豪华版 <span class="price">12.98万</span> </p>
+						<p class="list_3 layerbg2" id="1" rel="A">2016款 北京40L 2.0T 手动两驱豪华版 <span class="price">12.98万</span> </p>
+						<p class="pinpailist" style="background:#e3e3e3;text-align:center">2015款</p>
+						<p class="list_3 layerbg2" id="1" rel="A">2016款 北京40L 2.0T 手动两驱豪华版 <span class="price">12.98万</span> </p>
+						<p class="list_3 layerbg2" id="1" rel="A">2016款 北京40L 2.0T 手动两驱豪华版 <span class="price">12.98万</span> </p>
+						<p class="list_3 layerbg2" id="1" rel="A">2016款 北京40L 2.0T 手动两驱豪华版 <span class="price">12.98万</span> </p>
+					</div>
+				</div>
+			</li>
+			<li class="mb">
+				<div class="select_box hook-city">
+					<div class="tip">请选择省市</div>
+				</div>
+				<div class="ucarselecttype   third-menu hook-city-second" style="display:none; height: 349px" >
+					<div class="se-title">
+						请选择省份
+					</div>
+					<div class="right-letters third-menu-content"  style=" height: 295px">
+						<p class="pinpailist list_4 province" id="1">北京</p><p class="pinpailist list_4 province" id="2">天津</p><p class="pinpailist list_4 province" id="3">上海</p><p class="list_4 layerbg2 province" id="4">重庆</p><p class="pinpailist list_4" id="5">河北</p><p class="pinpailist list_4" id="6">山西</p><p class="pinpailist list_4" id="8">辽宁</p><p class="pinpailist list_4" id="9">吉林</p><p class="pinpailist list_4" id="10">黑龙江</p><p class="pinpailist list_4" id="11">江苏</p><p class="pinpailist list_4" id="12">浙江</p><p class="pinpailist list_4" id="13">安徽</p><p class="pinpailist list_4" id="14">福建</p><p class="pinpailist list_4" id="15">江西</p><p class="pinpailist list_4" id="16">山东</p><p class="list_4 pinpailist" id="17">河南</p><p class="pinpailist list_4" id="18">湖北</p><p class="pinpailist list_4" id="19">湖南</p><p class="pinpailist list_4" id="20">广东</p><p class="pinpailist list_4" id="21">甘肃</p><p class="list_4 pinpailist" id="22">四川</p><p class="pinpailist list_4" id="24">贵州</p><p class="pinpailist list_4" id="25">海南</p><p class="list_4 pinpailist" id="26">云南</p><p class="pinpailist list_4" id="27">青海</p><p class="pinpailist list_4" id="28">陕西</p><p class="pinpailist list_4" id="29">广西</p><p class="pinpailist list_4" id="30">西藏</p><p class="pinpailist list_4" id="31">宁夏</p><p class="pinpailist list_4" id="32">新疆</p><p class="pinpailist list_4" id="33">内蒙古</p>
+					</div>
+				</div>
+				<div class="ucarselecttype  third-menu hook-city-third" style="display:none;height: 349px" >
+					<div class="se-title">
+						请选择城市
+					</div>
+					<div class="right-letters third-menu-content"  style=" height: 295px">
+						<p class="pinpailist list_5 mylist " id="8">沈阳</p><p class="pinpailist list_5 mylist " id="38">大连</p><p class="pinpailist list_5 mylist " id="66">鞍山</p><p class="pinpailist list_5 mylist " id="94">抚顺</p><p class="pinpailist list_5 mylist " id="122">本溪</p><p class="pinpailist list_5 mylist " id="150">丹东</p><p class="pinpailist list_5 mylist " id="177">锦州</p><p class="pinpailist list_5 mylist " id="204">营口</p><p class="pinpailist list_5 mylist " id="230">阜新</p><p class="pinpailist list_5 mylist " id="255">辽阳</p><p class="pinpailist list_5 mylist " id="277">盘锦</p><p class="pinpailist list_5 mylist " id="296">铁岭</p><p class="pinpailist list_5 mylist " id="313">朝阳</p><p class="pinpailist list_5 mylist " id="329">葫芦岛</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="select_box">
+					<div class="tip" type="text">
+						<input type="text" placeholder="请输入车牌号">
+					</div>
+				</div>
+			</li>
+			<li class="mb">
+				<div class="select_box hook-date">
+					<div class="tip">请选择年份</div>
+				</div>
+				<div class="ucarselecttype   third-menu hook-date-second" style="display:none;height: 349px;" >
+					<div class="se-title">
+						选择年份
+					</div>
+					<div class="right-letters third-menu-content">
+						<p class="pinpailist list_7" id="1">1月份</p>
+						<p class="pinpailist list_7" id="1">2月份</p>
+						<p class="pinpailist list_7" id="1">3月份</p>
+						<p class="pinpailist list_7" id="1">4月份</p>
+						<p class="pinpailist list_7" id="1">5月份</p>
+						<p class="pinpailist list_7" id="1">6月份</p>
+						<p class="pinpailist list_7" id="1">7月份</p>
+						<p class="pinpailist list_7" id="1">8月份</p>
+						<p class="pinpailist list_7" id="1">9月份</p>
+						<p class="pinpailist list_7" id="1">10月份</p>
+						<p class="pinpailist list_7" id="1">11月份</p>
+						<p class="pinpailist list_7" id="1">12月份</p>
+					</div>
+				</div>
+				<div class="ucarselecttype  third-menu hook-date-third" style="display:none;height: 349px;" >
+					<div class="se-title">
+						选择月份
+					</div>
+					<div class="right-letters third-menu-content" style="height: 295px;">
+						<p class="pinpailist list_8 mylist " id="8">1号</p>
+						<p class="pinpailist list_8 mylist " id="8">2号</p>
+						<p class="pinpailist list_8 mylist " id="8">3号</p>
+						<p class="pinpailist list_8 mylist " id="8">4号</p>
+						<p class="pinpailist list_8 mylist " id="8">5号</p>
+						<p class="pinpailist list_8 mylist " id="8">6号</p>
+						<p class="pinpailist list_8 mylist " id="8">7号</p>
+						<p class="pinpailist list_8 mylist " id="8">8号</p>
+						<p class="pinpailist list_8 mylist " id="8">9号</p>
+						<p class="pinpailist list_8 mylist " id="8">10号</p>
+						<p class="pinpailist list_8 mylist " id="8">11号</p>
+						<p class="pinpailist list_8 mylist " id="8">12号</p>
+						<p class="pinpailist list_8 mylist " id="8">13号</p>
+						<p class="pinpailist list_8 mylist " id="8">14号</p>
+						<p class="pinpailist list_8 mylist " id="8">15号</p>
+						<p class="pinpailist list_8 mylist " id="8">16号</p>
+						<p class="pinpailist list_8 mylist " id="8">17号</p>
+						<p class="pinpailist list_8 mylist " id="8">18号</p>
+						<p class="pinpailist list_8 mylist " id="8">19号</p>
+						<p class="pinpailist list_8 mylist " id="8">20号</p>
+						<p class="pinpailist list_8 mylist " id="8">21号</p>
+						<p class="pinpailist list_8 mylist " id="8">22号</p>
+						<p class="pinpailist list_8 mylist " id="8">23号</p>
+						<p class="pinpailist list_8 mylist " id="8">24号</p>
+						<p class="pinpailist list_8 mylist " id="8">25号</p>
+						<p class="pinpailist list_8 mylist " id="8">26号</p>
+						<p class="pinpailist list_8 mylist " id="8">27号</p>
+						<p class="pinpailist list_8 mylist " id="8">28号</p>
+						<p class="pinpailist list_8 mylist " id="8">29号</p>
+						<p class="pinpailist list_8 mylist " id="8">30号</p>
+						<p class="pinpailist list_8 mylist " id="8">31号</p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="select_box">
+					<div class="tip" type="text">
+						<input type="text" placeholder="上牌时间" id="J-xl">
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="select_box">
+					<div class="tip" type="text">
+						<input type="text" placeholder="请输入公里数">
+					</div>
+				</div>
+			</li>
+			<li><input class="select_box btn" type="button"  value="快速估值"/></li>
+		</ul>
+	</div>
+</header>
 </div>
-<div >
-	<img src="./imgs/banner3.jpg" alt="" width="100%" style="display: block;">
+<div class="phone">
+	<img height="38" width="38" src="./imgs/icon_01.png" alt="">
+	<span class="big">400</span>
+	<div class="small">
+		<p>固话/手机均可拨打</p>
+		<p>-0023-001</p>
+	</div>
 </div>
 
-<section class="case" style="height:100%">
-	<div class="mask case-mask">
+<div class="banner" id="slider">
+	<div class="hd">
+		<ul><li class=""></li><li class=""></li><li class=""></li></ul>
+	</div>
+	<div class="pic">
+		<a href=""><img src="./imgs/banner1.jpg"  width="100%" height="520" alt=""></a>
+		<a href=""><img src="./imgs/banner1.jpg"  width="100%" height="520" alt=""></a>
+		<a href=""><img src="./imgs/banner1.jpg"  width="100%" height="520" alt=""></a>
+	</div>
+	
+</div>
+
+<script>
+	(function(){
+		jQuery("#slider").slide({mainCell:".pic",effect:"fade",autoPlay:true,defaultPlay:true,mouseOverStop:true, easing:"swing",delayTime:3800,titCell:".hd ul li"});
+	}())
+</script>
+
+
+
+
+
+<section class="identify">
+	<div class="swapper">
+		<h2 class="title"><a href="">车辆高级鉴定</a></h2>
+		<p class="desc">为您把控质量关，杜绝问题车，保障您的权益</p>
+	</div>
+	<div class="content clearfix">
+		<div class="introd clearfix">
+			<div class="image">
+				<img src="./imgs/index_01.jpg" width="270" height="230" alt="">
+			</div>
+			<div class="right">
+				<h5 class="name"><a href="">车辆鉴定</a></h5>
+				<p class="text"><a href="">全面鉴定车况，提供车辆鉴定报告，送30天包退一年全险，鉴定有误先行赔付，具体协议标准参考APP用户协议</a></p>
+			</div>
+		</div>
+		<div class="introd clearfix">
+			<div class="image">
+				<img src="./imgs/index_01.jpg"  width="270" height="230"  alt="">
+			</div>
+			<div class="right">
+				<h5 class="name"><a href="">车辆鉴定</a></h5>
+				<p class="text"><a href="">全面鉴定车况，提供车辆鉴定报告，送30天包退一年全险，鉴定有误先行赔付，具体协议标准参考APP用户协议</a></p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="case">
+	<div class="mask">
+		<h2 class="title"><a href="">案例</a></h2>
 		<ul class="lists clearfix">
 			<li class="item">
 				<img src="./imgs/index_06.jpg" width="350" height="216" alt="">
-				<p class="name"><a href="case-list.html">检测标准</a></p>
+				<p class="name">检测标准</p>
 				<p class="desc">严格的检测标准，细致的检测项目， 规范的操作流程，对车辆
 进行完整细致的检测</p>
-				<a href="case-list.html"><div class="mask"></div></a>
+				<div class="mask"></div>
 			</li>
 			<li class="item">
 				<img src="./imgs/index_06.jpg" width="350" height="216" alt="">
-				<p class="name"><a href="cast-list.html">检测标准</a></p>
+				<p class="name">检测标准</p>
 				<p class="desc">严格的检测标准，细致的检测项目， 规范的操作流程，对车辆
 进行完整细致的检测</p>
-				<a href="case-list.html"><div class="mask"></div></a>
+				<div class="mask">
+					<div class="plus"></div>
+				</div>
 			</li>
 			<li class="item">
 				<img src="./imgs/index_06.jpg" width="350" height="216" alt="">
-				<p class="name"><a href="cast-list.html">检测标准</a></p>
+				<p class="name">检测标准</p>
 				<p class="desc">严格的检测标准，细致的检测项目， 规范的操作流程，对车辆
 进行完整细致的检测</p>
-				<a href="case-list.html"><div class="mask"></div></a>
-			</li>
-			<li class="item">
-				<img src="./imgs/index_06.jpg" width="350" height="216" alt="">
-				<p class="name"><a href="cast-list.html">检测标准</a></p>
-				<p class="desc">严格的检测标准，细致的检测项目， 规范的操作流程，对车辆
-进行完整细致的检测</p>
-				<a href="case-list.html"><div class="mask"></div></a>
-			</li>
-			<li class="item">
-				<img src="./imgs/index_06.jpg" width="350" height="216" alt="">
-				<p class="name"><a href="cast-list.html">检测标准</a></p>
-				<p class="desc">严格的检测标准，细致的检测项目， 规范的操作流程，对车辆
-进行完整细致的检测</p>
-				<a href="case-list.html"><div class="mask"></div></a>
-			</li>
-			<li class="item">
-				<img src="./imgs/index_06.jpg" width="350" height="216" alt="">
-				<p class="name"><a href="cast-list.html">检测标准</a></p>
-				<p class="desc">严格的检测标准，细致的检测项目， 规范的操作流程，对车辆
-进行完整细致的检测</p>
-				<a href="case-list.html"><div class="mask"></div></a>
+				<div class="mask"></div>
 			</li>
 		</ul>
 	</div>
 </section>
 
-<footer class="footer">
+
+
+
+<section class="parner">
+	<div class="parner-wrapper">
+		<h2 class="title"><a href="">合作伙伴</a></h2>
+		<ul class="clearfix">
+			<li class="par-item">
+				<img src="./imgs/index_08.jpg" alt="" width="190" height="85">
+			</li>
+			<li class="par-item">
+				<img src="./imgs/index_10.jpg" alt="" width="190" height="85">
+			</li>
+			<li class="par-item">
+				<img src="./imgs/index_08.jpg" alt="" width="190" height="85">
+			</li>
+			<li class="par-item">
+				<img src="./imgs/index_10.jpg" alt="" width="190" height="85">
+			</li> 
+			<li class="par-item">
+				<img src="./imgs/index_08.jpg" alt="" width="190" height="85">
+			</li>
+		</ul>	
+	</div>
+</section>
+<div class="right-bar">
+	<ul>
+		<li class="common kf"><div class="telphone">0371-63765888</div></li>
+		<li class="common ewm">
+			<div class="weixin">
+				<img src="./imgs/index_09.jpg" alt="" width="128" height="126">
+			</div>
+		</li>
+		<li class="common top hook-top">
+			<p>TOP</p>
+		</li>
+	</ul>
+</div>
+
+<div class="right-bar">
+	<ul>
+		<li class="common kf"><div class="telphone">0371-63765888</div></li>
+		<li class="common ewm">
+			<div class="weixin">
+				<img src="./imgs/index_09.jpg" alt="" width="128" height="126">
+			</div>
+		</li>
+		<li class="common top hook-top">
+			<p>TOP</p>
+		</li>
+	</ul>
+</div>
+<footer class="footer wow fadeInUp animated" data-wow-delay="5s">
 	<div class="friend-box">
 		<div class="friendly">
 			<ul class="clearfix">
@@ -119,5 +396,14 @@
 		</div>	
 	</div>
 </footer>
-</body>
+<link href="./style/date.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="./script/laydate.dev.js"></script>
+<script type="text/javascript" charset="utf-8" >
+  laydate({
+    elem: '#J-xl',
+    istoday: true
+  });
+
+</script>
+</body>  
 </html>

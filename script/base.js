@@ -101,4 +101,32 @@ $(function(){
 		$('.hook-city-second').fadeOut();
 		$('.hook-city-third').fadeOut();
 	})
+
+	$('.hook-gz-btn').click(function(){
+		$('.bomb, .bomb-form').fadeIn();
+	})
+	$('.hook-bomb-input').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		$(e.target).next('.list').fadeToggle();
+	})
+	$('.hook-param').click(function(){
+		var text = $(this).text();
+		$(this).parent(".list").prev().text(text);
+		$(this).parent(".list").fadeOut();
+	})
+	$('html body').click(function(){
+		$('.bomb-form .list').fadeOut();
+	})
+	$('#cancel').click(function(){
+		$('.bomb, .bomb-form').fadeOut();
+	})
+	$('.bomb').click(function(){
+		$('.bomb, .bomb-form').fadeOut();
+	})
+	$('#submit').click(function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		window.location.href= 'assess-detail.html'
+	})
 })
